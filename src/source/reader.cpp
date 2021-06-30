@@ -74,9 +74,12 @@ int main(int argc, char *argv[])
            auto it_vec = (*it).second.defects;
           
            for (auto item : it_vec){
-             std::cout << "item " ;
+             std::cout << "\nvec item url: " << item.URL_address;
+             std::cout << "\nvec item size: " << item.size;
+             std::cout << "\nvec item width: " << item.width;
+
            }
-        
+        std::cout << "\n\n";
          
       }
         

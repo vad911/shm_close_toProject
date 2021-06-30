@@ -91,13 +91,11 @@ dat00.X = 125;
 dat00.Y = 205;
 
 
+
 Defect def00(alloc_inst);
 def00.URL_address = "/mnt/source00";
 def00.size = 152;
 def00.width = 501;
-
-
-
 
 Defect def01(alloc_inst);
 def01.URL_address = "/mnt/source00_454";
@@ -110,8 +108,10 @@ def02.size = 7;
 def02.width = 154;
 
 
-dat00.defects.push_back(def00);
 
+dat00.defects.push_back(def00);
+dat00.defects.push_back(def01);
+dat00.defects.push_back(def02);
 // положим в вектор
 /*
 dat00.defects.push_back(def00);
@@ -124,20 +124,27 @@ dat01.Label = "second";
 dat01.X = 52;
 dat01.Y = 68;
 
-
-
 // положим в вектор
-//dat01.defects.push_back(def00);
+Defect def11(alloc_inst);
+def11.URL_address = "Program Files/scan";
+def11.size = 882;
+def11.width = 777;
+dat01.defects.push_back(def11);
+
+
+
 
 Data dat02(alloc_inst);
 dat02.Label = "third - string sadasdasdssssssssssss";
 dat02.X = 14;
 dat02.Y = 5;
 
-
-
 // положим в вектор
-// dat02.defects.push_back(def02);
+Defect def21(alloc_inst);
+def21.URL_address = "shared folder ...";
+def21.size  = 555;
+def21.width = 888;
+dat02.defects.push_back(def21);
 
 
 std::pair<const int, Data> my_pair00 = std::make_pair(101, dat00);
